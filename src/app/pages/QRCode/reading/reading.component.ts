@@ -13,6 +13,7 @@ export class ReadingComponent implements OnInit {
   }
 
   scanSuccessHandle(e: any) {
-    console.log(e);
+    // console.log(e);
+    alert(e);
   }
 }
