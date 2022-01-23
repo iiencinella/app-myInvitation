@@ -1,0 +1,17 @@
+<div class="content-generator">
+  <section>
+    <textarea
+      [(ngModel)]="value"
+      cols="30"
+      rows="10"
+      id="contentQR"></textarea>
+    <ngx-qrcode
+      [elementType]="elementType"
+      [errorCorrectionLevel]="errorCorrectionLevel"
+      [value]="value"
+      cssClass="bshadow"
+      id="codeQR"
+    ></ngx-qrcode>
+  </section>
+  <button (click)="printer()">Imprimir QR</button>
+</div>
