@@ -3,3 +3,9 @@
 <div class="content-scanner">
   <zxing-scanner (scanSuccess)="scanSuccessHandle($event)"></zxing-scanner>
 </div>
+<section>
+  <header>Listado de Invitados</header>
+  <ul *ngFor="let item of listado">
+    <li>{{ item }}</li>
+  </ul>
+</section>

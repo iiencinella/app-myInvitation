@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 export class ReadingComponent implements OnInit {
 
   value = "";
+  listado: string[] = new Array();
 
   constructor() { }
 
@@ -19,6 +20,7 @@ export class ReadingComponent implements OnInit {
   scanSuccessHandle(e: any) {
     this.decrypt(e);
     setTimeout(() => alert(this.value), 500);
+    this.listado.push(this.value);
   }
 
   decrypt(clave: string) {
