@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HeaderComponent } from './shared/header/header.component';
-import { GenerationComponent } from './pages/QRCode/generation/generation.component';
-import { ReadingComponent } from './pages/QRCode/reading/reading.component';
 import { FormsModule } from '@angular/forms';
 import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
@@ -15,9 +13,7 @@ import { ZXingScannerModule } from '@zxing/ngx-scanner';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    GenerationComponent,
-    ReadingComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

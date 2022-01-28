@@ -3,6 +3,7 @@ import { NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels } from '@techiedi
 
 import * as crypto from 'crypto-js';
 import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'mi-generation',
   templateUrl: './generation.component.html',

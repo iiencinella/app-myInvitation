@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GenerationComponent } from './pages/QRCode/generation/generation.component';
-import { ReadingComponent } from './pages/QRCode/reading/reading.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'generate' },
-  { path: 'generate', component: GenerationComponent },
-  { path: 'reading', component: ReadingComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'code' },
+  { path: 'code', loadChildren: () => import('./pages/code-qr/code-qr.module').then(m => m.CodeQRModule) }
 ];
 
 @NgModule({
